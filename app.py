@@ -1,6 +1,10 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+
+# Ensure compatibility with Render port binding
+os.environ["PORT"] = "10000"
 
 st.set_page_config(page_title="Witness Archive", layout="wide")
 
